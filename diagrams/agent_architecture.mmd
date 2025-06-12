@@ -1,0 +1,27 @@
+flowchart TB
+    Client(Client Applications) <--> API
+
+    subgraph "FastAPI Server"
+        API[API Endpoints]
+        API <--> Orchestrator
+        
+        subgraph "Agent System"
+            Orchestrator[Agent Orchestrator]
+            Orchestrator <--> DataAgent
+            Orchestrator <--> KnowledgeAgent
+            Orchestrator <--> ValidationAgent
+            Orchestrator <--> AnalyticsAgent
+        end
+    end
+    
+    subgraph "MCP Tools"
+        DataAgent <--> SupabaseTools
+        KnowledgeAgent <--> VectorTools
+        ValidationAgent <--> ValidationTools
+        AnalyticsAgent <--> AnalyticsTools
+    end
+    
+    subgraph "Persistent Storage"
+        SupabaseTools <--> SupabaseDB[(Supabase)]
+        VectorTools <--> VectorDB[(Vector Store)]
+    end

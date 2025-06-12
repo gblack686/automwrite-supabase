@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1_revised",
+    "subject": "Automate Your Advice Reports in Seconds with Automwrite",
+    "body": "Hi {First Name},\n\nMy name is Tiana from Automwrite. We help financial advice firms like yours scale by automating report production.\n\nAutomwrite transforms fact finds, meeting notes (any format - PDF, handwritten, etc.) into editable Word reports in seconds. No templates, no manual formatting. Adapt it to your existing report style effortlessly.\n\nFirms using Automwrite cut report writing time by over 50%, freeing them for client work and growth.\n\nInterested in seeing how?\n*   [Link to Demo Scheduling]\n*   [Link to 14-Day Free Trial]\n\nLet me know if you'd rather not receive emails from me.\n\nBest,\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Revised for conciseness and directness. Word count: ~85"
+    }
+  },
+  {
+    "id": 2,
+    "subject": "Your Reports Can Be Done in Seconds, Not Hours",
+    "body": "Hello,\n\nI know we have been reaching out quite a bit, but I wanted to share something I think you would find really useful.\n\nAutomwrite's smart drag and drop import system can take any Fact Find, PDF image, unstructured meeting notes – even handwritten ones – and turn them into completely customisable, ready to use, suitability reports in seconds. Each and every report is unique to your client and their specific circumstances.\n\nThere are no rigid templates or fixed structures and we have the ability to make your reports look exactly the way you write them now.\n\nIf that sounds useful, I am happy to have a quick chat or send over more details. Alternatively, if you'd like me to stop reaching out, you can let me know too.\n\nWarm regards,",
+    "target_personas": ["Independent Adviser Emma", "Cost-Conscious Chris", "Wealth-Delegator William"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 7,
+      "complexity": "Low",
+      "notes": "Emphasizes ease of implementation for cautious personas"
+    }
+  },
+  {
+    "id": "2_revised",
+    "subject": "Reports in Seconds, Not Hours (Automwrite)",
+    "body": "Hi {First Name},\n\nFollowing up - Automwrite's drag-and-drop system turns any client document (Fact Finds, PDFs, even handwritten notes) into unique, customizable reports in seconds.\n\nNo rigid templates – our reports adapt to your current style.\n\nWorth a quick chat to see how this can save you hours? Or, I can send more details.\n\nLet me know if you'd prefer I don't follow up.\n\nBest,\nTiana",
+    "target_personas": ["Independent Adviser Emma", "Cost-Conscious Chris", "Wealth-Delegator William"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 7,
+      "complexity": "Very Low",
+      "notes": "Revised for brevity. Word count: ~60. Added product name to subject for clarity."
+    }
+  },
+  {
+    "id": "3_revised",
+    "subject": "{First Name}, Still interested in Automwrite?",
+    "body": "Hi {First Name},\n\nQuick check-in: still interested in a demo or trial of Automwrite? We can show you how to write bespoke reports in seconds.\n\nAutomwrite offers advanced letter customization. Let me know a good time for a quick demo/trial setup.\n\nNo longer interested? Just say the word.\n\nCheers,\nTiana",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Re-engagement",
+      "effectiveness_rating": 8,
+      "complexity": "Very Low",
+      "notes": "Revised for conciseness. Word count: ~55"
+    }
+  },
+  {
+    "id": "4_revised",
+    "subject": "{First Name}, Scale Your Firm, Not Just Your Team",
+    "body": "Hi {First Name},\n\nStruggling to scale your firm without just hiring more people? More staff often means more complexity, not capacity.\n\nAutomwrite offers a different way. We analyze client data (fact finds, notes, etc.) to generate bespoke, compliant, and editable advice reports in seconds. No templates, no manual formatting.\n\nGrow your firm, not your overhead.\n\nReady to see how? [Link to Free Trial]\n\nCheers,\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Revised for impact and brevity. Word count: ~65. Subject more benefit-driven."
+    }
+  },
+  {
+    "id": "5_revised",
+    "subject": "More Clients, Faster Reports, Better ROI with Automwrite",
+    "body": "Hi {First Name},\n\nAutomwrite helps financial advisers write reports in seconds, freeing up time for more clients, business scaling, and increased ROI.\n\nStop spending hours on reports. Our system creates flexible, high-quality reports in minutes, no rigid templates.\n\nSee it in action: [Link to Schedule Demo]\nOr reply with a few times that work for you.\n\nNot for you? A quick reply is fine.\n\nBest,\nTiana",
+    "target_personas": ["Efficiency-Oriented Ethan", "Cost-Conscious Chris", "Independent Adviser Emma"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 8,
+      "complexity": "Very Low",
+      "notes": "Revised for conciseness and stronger CTA. Word count: ~70"
+    }
+  },
+  {
+    "id": "6_revised",
+    "subject": "Automwrite: Key Features for Efficient Reporting",
+    "body": "Hi {First Name},\n\nHighlighting a few Automwrite features for efficient report writing:\n\n*   **Batch Processing:** Handle multiple clients at once.\n*   **Versatile Analysis:** Works with DOCX, PDFs, transcripts, graphs & more.\n*   **Compliance Check:** Acts as a second set of eyes to catch inconsistencies.\n*   **Mobile Access:** Write reports on the go.\n\nOpen to a quick demo or trial to see these in action?\n\nBest,\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Wealth-Delegator William", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Middle of funnel",
+      "effectiveness_rating": 7,
+      "complexity": "Low",
+      "notes": "Revised to be more scannable with bullets. Word count: ~60"
+    }
+  },
+  {
+    "id": "7_revised",
+    "subject": "{First Name}, Turn Any FactFind into an Editable Report (Automwrite)",
+    "body": "Hi {First Name},\n\nAutomwrite's drag-and-drop import turns any client doc (Fact Finds, PDFs, handwritten notes) into customizable reports in seconds.\n\nNo rigid templates – your reports, your style.\n\nInterested in a quick chat or more details?\n\nPrefer no more emails? Just let me know.\n\nWarm regards,\nTiana",
+    "target_personas": ["Independent Adviser Emma", "Cost-Conscious Chris", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 6,
+      "complexity": "Very Low",
+      "notes": "Revised for brevity, similar to #2_revised. Word count: ~55"
+    }
+  },
+  {
+    "id": "8_revised",
+    "subject": "Faster Reports & Early Adopter Perks with Automwrite",
+    "body": "Hello {First Name},\n\nAutomwrite helps advisers write reports in seconds – no templates, no manual formatting. Turn fact finds and notes into ready-to-use reports instantly.\n\nTry Automwrite free:\n*   [Link to Demo Scheduling]\n*   [Link to 30-Day Trial]\n\n**Early Adopter Perk:** Lifetime discount + all future features included if you subscribe soon.\n\nReply with your availability/preference, or to opt-out.\n\nWarm regards,\nTiana",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 8.5,
+      "complexity": "Low",
+      "notes": "Revised for conciseness, highlighted early adopter perk. Word count: ~75"
+    }
+  },
+  {
+    "id": "9_revised",
+    "subject": "{First Name}, Ready to See Automwrite in Action?",
+    "body": "Hello {First Name},\n\nFollowing up: interested in seeing how Automwrite creates advice reports in seconds (really!)\n\nOpen to a brief demo or trial next week? Let me know what works.\n\nWarm regards,\nTiana",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 7,
+      "complexity": "Very Low",
+      "notes": "Revised to be even more direct. Word count: ~40"
+    }
+  }
+] 

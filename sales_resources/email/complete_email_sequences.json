@@ -1,0 +1,206 @@
+[
+  {
+    "id": "1_revised_20250518",
+    "subject": "Automate Your Advice Reports in Seconds with Automwrite",
+    "body": "Hi {First Name},\n\nMy name is Logan from Automwrite. We help financial advice firms like yours scale by automating report production.\n\nAutomwrite transforms fact finds, meeting notes (any format - PDF, handwritten, etc.) into editable Word reports in seconds. No templates, no manual formatting. Adapt it to your existing report style effortlessly.\n\nFirms using Automwrite cut report writing time by over 50%, freeing them for client work and growth.\n\nInterested in seeing how?\n*   https://calendly.com/automwrite-meeting/30min\n*   https://calendly.com/automwrite-meeting/30min\n\nLet me know if you'd rather not receive emails from me.\n\nBest,\nLogan",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Revised for conciseness and directness. Word count: ~85"
+    }
+  },
+  {
+    "id": "1_followup1_20250518",
+    "subject": "Quick Question About Your Report Process",
+    "body": "Hi {First Name},\n\nI reached out last week about how Automwrite helps financial advisers cut report writing time by over 50%.\n\nI'm curious - how long does your team currently spend on producing client reports?\n\nMany advisers we work with were spending 2-3 hours per report before switching to Automwrite. One adviser recently told me they've been able to see 5 more clients per week as a result.\n\nIf this sounds valuable, I'd be happy to show you a quick demo:\nhttps://calendly.com/automwrite-meeting/30min\n\nBest,\nLogan",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 8,
+      "complexity": "Low",
+      "notes": "First follow-up focused on gathering information while reinforcing value. Word count: ~90"
+    }
+  },
+  {
+    "id": "1_followup2_20250518",
+    "subject": "Last Touchpoint About Automwrite",
+    "body": "Hi {First Name},\n\nI've reached out a couple of times about how Automwrite helps financial advisers automate their report writing process.\n\nAfter this email, I won't follow up again, but I thought I'd share that we're currently offering implementation support at no additional cost for new clients this month.\n\nThis includes custom report template setup and integration with your existing systems - a service valued at £2,000.\n\nIf you're interested:\n* https://calendly.com/automwrite-meeting/30min\n* https://calendly.com/automwrite-meeting/30min\n\nBest,\nLogan",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 7,
+      "complexity": "Low",
+      "notes": "Final follow-up with special offer incentive. Word count: ~80"
+    }
+  },
+  {
+    "id": "2_revised_20250518",
+    "subject": "Reports in Seconds, Not Hours (Automwrite)",
+    "body": "Hi {First Name},\n\nFollowing up - Automwrite's drag-and-drop system turns any client document (Fact Finds, PDFs, even handwritten notes) into unique, customizable reports in seconds.\n\nNo rigid templates – our reports adapt to your current style.\n\nWorth a quick chat to see how this can save you hours? Or, I can send more details.\n\nLet me know if you'd prefer I don't follow up.\n\nBest,\nLogan",
+    "target_personas": ["Independent Adviser Emma", "Cost-Conscious Chris", "Wealth-Delegator William"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 7,
+      "complexity": "Very Low",
+      "notes": "Revised for brevity. Word count: ~60. Added product name to subject for clarity."
+    }
+  },
+  {
+    "id": "3_revised_20250518",
+    "subject": "{First Name}, Still interested in Automwrite?",
+    "body": "Hi {First Name},\n\nQuick check-in: still interested in a demo or trial of Automwrite? We can show you how to write bespoke reports in seconds.\n\nAutomwrite offers advanced letter customization. Let me know a good time for a quick demo/trial setup.\n\nNo longer interested? Just say the word.\n\nCheers,\nLogan",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Re-engagement",
+      "effectiveness_rating": 8,
+      "complexity": "Very Low",
+      "notes": "Revised for conciseness. Word count: ~55"
+    }
+  },
+  {
+    "id": "4_revised_20250518",
+    "subject": "{First Name}, Scale Your Firm, Not Just Your Team",
+    "body": "Hi {First Name},\n\nStruggling to scale your firm without just hiring more people? More staff often means more complexity, not capacity.\n\nAutomwrite offers a different way. We analyze client data (fact finds, notes, etc.) to generate bespoke, compliant, and editable advice reports in seconds. No templates, no manual formatting.\n\nGrow your firm, not your overhead.\n\nReady to see how? https://calendly.com/automwrite-meeting/30min\n\nCheers,\nLogan",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Revised for impact and brevity. Word count: ~65. Subject more benefit-driven."
+    }
+  },
+  {
+    "id": "4_followup1_20250518",
+    "subject": "How a 3-Person Firm Doubled Their Client Capacity",
+    "body": "Hi {First Name},\n\nI recently shared how Automwrite helps advisers scale without adding headcount.\n\nI thought you might be interested in how a 3-person advisory firm in London doubled their client capacity last quarter without hiring anyone new. The key was reducing their report writing time by 75%.\n\nThey now complete in 20 minutes what used to take them 1.5 hours per client - freeing up 4-5 hours daily across their team.\n\nWould you like to see if similar results are possible for your firm?\nhttps://calendly.com/automwrite-meeting/30min\n\nBest,\nLogan",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Case study follow-up highlighting concrete benefits. Word count: ~90"
+    }
+  },
+  {
+    "id": "4_followup2_20250518",
+    "subject": "Final Thoughts on Scaling Your Advice Firm",
+    "body": "Hi {First Name},\n\nThis is my final note about helping advice firms scale without adding headcount.\n\nI've worked with dozens of firms like yours who initially thought their report writing process was \"good enough\" until they saw what Automwrite could do. On average, they were able to take on 30% more clients within 60 days of implementation.\n\nIf you're looking to grow without proportionally increasing costs, I'd be happy to show you how:\nhttps://calendly.com/automwrite-meeting/30min\n\nAll the best with your firm's growth,\nLogan",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 8,
+      "complexity": "Low",
+      "notes": "Final follow-up with social proof and results data. Word count: ~80"
+    }
+  },
+  {
+    "id": "5_revised_20250518",
+    "subject": "More Clients, Faster Reports, Better ROI with Automwrite",
+    "body": "Hi {First Name},\n\nAutomwrite helps financial advisers write reports in seconds, freeing up time for more clients, business scaling, and increased ROI.\n\nStop spending hours on reports. Our system creates flexible, high-quality reports in minutes, no rigid templates.\n\nSee it in action: https://calendly.com/automwrite-meeting/30min\nOr reply with a few times that work for you.\n\nNot for you? A quick reply is fine.\n\nBest,\nLogan",
+    "target_personas": ["Efficiency-Oriented Ethan", "Cost-Conscious Chris", "Independent Adviser Emma"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 8,
+      "complexity": "Very Low",
+      "notes": "Revised for conciseness and stronger CTA. Word count: ~70"
+    }
+  },
+  {
+    "id": "5_followup1_20250518",
+    "subject": "What 2 Extra Hours Per Day Could Mean For Your Bottom Line",
+    "body": "Hi {First Name},\n\nI recently reached out about Automwrite's report automation capabilities.\n\nLet me ask you: What would you do with an extra 2 hours every day? Our customers typically report this time saving from automating their report writing process.\n\nFor a firm with 3 advisers billing £200/hour, that's an additional £6,000 of potential revenue weekly.\n\nWould this kind of ROI interest you?\nhttps://calendly.com/automwrite-meeting/30min\nhttps://calendly.com/automwrite-meeting/30min\n\nBest,\nLogan",
+    "target_personas": ["Efficiency-Oriented Ethan", "Cost-Conscious Chris", "Independent Adviser Emma"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "ROI-focused follow-up with concrete financial example. Word count: ~80"
+    }
+  },
+  {
+    "id": "5_followup2_20250518",
+    "subject": "One Last Thought About Your ROI",
+    "body": "Hi {First Name},\n\nThis is my final note about Automwrite's ability to boost your practice's ROI.\n\nOur clients typically see a 400% return on their investment within the first year. This comes from:\n• Increased client capacity (average 30% more clients)\n• Reduced operational costs (2-3 hours saved per client)\n• Higher client satisfaction (faster service delivery)\n\nIf you'd like to calculate your potential ROI:\nhttps://calendly.com/automwrite-meeting/30min\n\nWishing you continued success,\nLogan",
+    "target_personas": ["Efficiency-Oriented Ethan", "Cost-Conscious Chris", "Independent Adviser Emma"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 8,
+      "complexity": "Low",
+      "notes": "Final ROI-focused follow-up with clear benefits breakdown. Word count: ~85"
+    }
+  },
+  {
+    "id": "6_revised_20250518",
+    "subject": "Automwrite: Key Features for Efficient Reporting",
+    "body": "Hi {First Name},\n\nHighlighting a few Automwrite features for efficient report writing:\n\n*   **Batch Processing:** Handle multiple clients at once.\n*   **Versatile Analysis:** Works with DOCX, PDFs, transcripts, graphs & more.\n*   **Compliance Check:** Acts as a second set of eyes to catch inconsistencies.\n*   **Mobile Access:** Write reports on the go.\n\nOpen to a quick demo or trial to see these in action?\n\nBest,\nLogan",
+    "target_personas": ["Scaling Firm Sam", "Wealth-Delegator William", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Middle of funnel",
+      "effectiveness_rating": 7,
+      "complexity": "Low",
+      "notes": "Revised to be more scannable with bullets. Word count: ~60"
+    }
+  },
+  {
+    "id": "7_revised_20250518",
+    "subject": "{First Name}, Turn Any FactFind into an Editable Report (Automwrite)",
+    "body": "Hi {First Name},\n\nAutomwrite's drag-and-drop import turns any client doc (Fact Finds, PDFs, handwritten notes) into customizable reports in seconds.\n\nNo rigid templates – your reports, your style.\n\nInterested in a quick chat or more details?\n\nPrefer no more emails? Just let me know.\n\nWarm regards,\nLogan",
+    "target_personas": ["Independent Adviser Emma", "Cost-Conscious Chris", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 6,
+      "complexity": "Very Low",
+      "notes": "Revised for brevity, similar to #2_revised. Word count: ~55"
+    }
+  },
+  {
+    "id": "8_revised_20250518",
+    "subject": "Faster Reports & Early Adopter Perks with Automwrite",
+    "body": "Hello {First Name},\n\nAutomwrite helps advisers write reports in seconds – no templates, no manual formatting. Turn fact finds and notes into ready-to-use reports instantly.\n\nTry Automwrite free:\n*   https://calendly.com/automwrite-meeting/30min\n*   https://calendly.com/automwrite-meeting/30min\n\n**Early Adopter Perk:** Lifetime discount + all future features included if you subscribe soon.\n\nReply with your availability/preference, or to opt-out.\n\nWarm regards,\nLogan",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Top of funnel",
+      "effectiveness_rating": 8.5,
+      "complexity": "Low",
+      "notes": "Revised for conciseness, highlighted early adopter perk. Word count: ~75"
+    }
+  },
+  {
+    "id": "8_followup1_20250518",
+    "subject": "Your Early Adopter Status - Expiring Soon",
+    "body": "Hi {First Name},\n\nI wanted to follow up about the Early Adopter opportunity I mentioned for Automwrite.\n\nWe're limiting this special offer to just 20 firms, and we currently have only 5 spots remaining. Early Adopters receive:\n\n• 30% lifetime discount off standard pricing\n• Free access to all future premium features\n• Priority customer support\n\nWould securing an Early Adopter spot interest you? The offer expires this Friday.\n\nhttps://calendly.com/automwrite-meeting/30min\nhttps://calendly.com/automwrite-meeting/30min\n\nBest,\nLogan",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Urgency-focused follow-up with limited availability. Word count: ~90"
+    }
+  },
+  {
+    "id": "8_followup2_20250518",
+    "subject": "Last Call - Early Adopter Status (24 Hours Left)",
+    "body": "Hi {First Name},\n\nThis is the final notification that our Early Adopter program for Automwrite closes tomorrow.\n\nWe now have just 2 spots remaining for firms who want to lock in:\n\n• 30% lifetime discount\n• All future premium features at no extra cost\n• Priority implementation and support\n\nIf you're interested in claiming one of the last spots, please reply today or book a demo below.\n\nhttps://calendly.com/automwrite-meeting/30min\nhttps://calendly.com/automwrite-meeting/30min\n\nBest,\nLogan",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 8.5,
+      "complexity": "Low",
+      "notes": "Final urgency-driven follow-up with high scarcity. Word count: ~85"
+    }
+  },
+  {
+    "id": "9_revised_20250518",
+    "subject": "{First Name}, Ready to See Automwrite in Action?",
+    "body": "Hello {First Name},\n\nFollowing up: interested in seeing how Automwrite creates advice reports in seconds (really!)\n\nOpen to a brief demo or trial next week? Let me know what works.\n\nWarm regards,\nLogan",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 7,
+      "complexity": "Very Low",
+      "notes": "Revised to be even more direct. Word count: ~40"
+    }
+  }
+] 

@@ -1,0 +1,82 @@
+[
+  {
+    "company_name": "Advisory AI",
+    "details": {
+      "Overview": "\"AI software for financial advisers\nAutomate any advisory document in 5 minutes\"",
+      "Location": "London, England, UK",
+      "Employees": "11-50 Employees",
+      "Funding": "Pre Seed Funding",
+      "Links": "Crunchbase, LinkedIn",
+      "Pricing": "No pricing available on their website.\nMust book a demo before moving forward w/ the software.",
+      "Consumer Insight": "\"It doesnt work with Google calendar only outlook , and for live meetings you have to record the conversation and upload an MP3. What's the point?\""
+    }
+  },
+  {
+    "company_name": "Aveni AI",
+    "details": {
+      "Overview": "\"A new era of fs productivity with an AI assistant that will... Automate your admin, Check youre compliant, Auto assess for QA, Check your documents \"",
+      "Location": "Edinburgh, UK",
+      "Employees": "51-100 Employees",
+      "Funding": "Series A Funding",
+      "Links": "Crunchbase",
+      "Pricing": "No pricing available on their website.\nMust book a demo before moving forward with the software, and then there is a mention of a trial but not how long for."
+    }
+  },
+  {
+    "company_name": "Genovo",
+    "details": {
+      "Overview": "\"A highly customisable and easy-to-use online suitability report builder\nProviding the perfect balance of personalised user input and time-saving automation.\"",
+      "Location": "Shrewbury, Shropshire, UK",
+      "Employees": "1-10 Employees",
+      "Pricing": [
+        "Solo Plan (£60/month): 1 Writer, 2 Readers. Features: Upload logo & favicon, company branding, customize profiles (ATR, advice options, providers, investments), create report templates, plan charges profiles, email & online support.",
+        "Company Starter (£115/month, Extra Writer £35): 2 Writers, 4 Readers. All Solo features + share clients & reports, centrally manage content (report, library, templates).",
+        "Company Mini (£170/month, Extra Writer £30): 5 Writers, 10 Readers. All Starter features + custom fonts, report title page image, telephone support.",
+        "Company Midi (£290/month, Extra Writer £25): 10 Writers, 20 Readers. All Mini features + assisted onboarding, key account management, 1 admin login, custom sections, footers, dropdown values, hide Genovo sections.",
+        "Company Maxi (£500/month, Extra Writer £20): 20 Writers, 40 Readers. All Midi features + custom product types, report types, steps, bespoke development & consultancy services.",
+        "Group Plan",
+        "All plans include a 30-day free trial.",
+        "No demo required, can go straight to trial - enter CC details, but not to be charged until 30 days"
+      ],
+      "Consumer Insight": [
+        "\"We use genovo been with them years very good service and system. But like so many others don't know precisely what should be included in an sbr\"",
+        "\"I use Genovo - hate it and love it at the same time! I have created my own templates for some things now.\"",
+        "\"Been with genovo almost since their inception very simple and easy to use\"",
+        "\"Genovo is easier to use but ateb produces more complex reports.\"",
+        "\"I use Genovo- I find it really easy to use and includes all the necessary fca bits. It does include extra bits which are optional and down to personal preference but it's easy to remove and add sections where needed.\"",
+        "\"As someone who has been super fussy about report presentation for a long time, and so managed a bespoke set of reports for my last firm… I've just moved to Genovo with a new firm. It's by no means perfect, but actually when you get used to the software it does do a good amount of leg work for you and it's fairly logical in the presentation of the report. I've always spent time writing down the personal bits for the report, whether to put them in myself, for a PP to put them in. I'm still doing that, but I'm not having to think about whether standard and boring appendix type stuff needs updating. It works very well with a CIP built in, more of a faff with bespoke investment advice…\""
+      ],
+      "Our Response Strategy (How & Why We Win)": [
+        "Genovo isn't really competition when compared to Automwrite because it's essentially a tool for modifying templates rather than a true automation solution.",
+        "Still Manual, Not Automated - Your paraplanner is stuck making manual decisions for every section of the report. It's a system that requires constant intervention to ensure each detail is correct, meaning it doesn't truly save time or reduce workload in any meaningful way.",
+        "Rigid and Outdated Templates - Genovo relies on static templates that haven't seen much improvement in years. The system feels cumbersome, and while you can make adjustments, it doesn't evolve or adapt to modern workflows, leaving you with compliance-heavy documents that lack client-friendliness.",
+        "No Real Logic System - Genovo doesn't have the intelligence to make decisions for you. It's a wizard-based tool that requires you to build each report manually, section by section, rather than automating the process and cutting down on repetitive work.",
+        "Bulky and compliance-heavy reports that bury critical client recommendations in pages of detail. While compliance is important, the lack of a client-friendly format makes the output less engaging and less effective.",
+        "The time required to maintain templates and ensure they're up-to-date with compliance adds unnecessary complexity. It's a system that feels more like a relic of the past, with little innovation to make life easier for small and medium-sized advisory firms.",
+        "Why Automwrite?",
+        "Automwrite solves these issues by offering a truly automated solution that generates clear, client-friendly reports in minutes. With built-in compliance logic and dynamic adaptability, Automwrite reduces the need for manual work, allowing you to focus on what matters most serving your clients and growing your business."
+      ]
+    }
+  },
+  {
+    "company_name": "Avenir",
+    "details": {
+      "Overview": "\"Purpose-built AI designed to automate data extraction and reporting in financial advice.\" \"Auto-generate your client reports. Works with any template - ours or yours.\"",
+      "Pricing": [
+        "Standard Plan (£99/month per user): Ideal for individuals, offering automatic data extraction, post-meeting summaries, and 24/7 support.",
+        "Premium Plan (£250/month per user): Suited for frequent users, includes unlimited data extraction, post-meeting summaries, standard report generation, and 24/7 support.",
+        "Enterprise Plan (Custom Pricing): Designed for teams, includes custom firm template implementation, unlimited data extraction, post-meeting summaries, report generation, and 24/7 support."
+      ],
+      "Support Strategy Overview": "\"24/7 support\""
+    }
+  },
+  {
+    "company_name": "Paraplanning Online (PPOL)",
+    "details": {
+      "Overview": "\"Paraplanning Online provides a suitability report writing solution and cashflow modelling software for financial advisers\"",
+      "Location": "Oswestry, Shropshire, UK",
+      "Funding": "Private",
+      "Links": "Crunchbase, LinkedIn"
+    }
+  }
+] 

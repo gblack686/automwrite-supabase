@@ -1,0 +1,146 @@
+{
+  "api_settings": {
+    "api_key": "YOUR_OPENAI_API_KEY",
+    "model": "gpt-4"
+  },
+  "campaign_details": {
+    "campaign_name": "EATT 2025 Delegate Outreach",
+    "campaign_duration_weeks": 6,
+    "sequence_length_days": 15,
+    "output_file": "campaigns/May2025/generated_campaign_outline.md"
+  },
+  "tiering_settings": {
+    "tier_count": 3,
+    "accounts_per_tier": 10,
+    "leads_per_account": 5,
+    "email_volume": {
+      "tier_1": {
+        "emails_per_week": 3,
+        "max_automated_percentage": 60,
+        "custom_touchpoint_requirement": true
+      },
+      "tier_2": {
+        "emails_per_week": 5,
+        "max_automated_percentage": 80,
+        "custom_touchpoint_requirement": false
+      },
+      "tier_3": {
+        "emails_per_week": 7,
+        "max_automated_percentage": 100,
+        "custom_touchpoint_requirement": false
+      }
+    }
+  },
+  "messaging_capacity": {
+    "daily_limits": {
+      "Enterprise Account Executive": {
+        "automated_emails_per_day": 15,
+        "custom_emails_per_day": 10,
+        "linkedin_messages_per_day": 8,
+        "priority_accounts_ratio": 0.8
+      },
+      "Mid-Market Account Executive": {
+        "automated_emails_per_day": 25,
+        "custom_emails_per_day": 8,
+        "linkedin_messages_per_day": 12,
+        "priority_accounts_ratio": 0.6
+      },
+      "SMB Account Executive": {
+        "automated_emails_per_day": 30,
+        "custom_emails_per_day": 5,
+        "linkedin_messages_per_day": 15,
+        "priority_accounts_ratio": 0.4
+      },
+      "Sales Development Representative": {
+        "automated_emails_per_day": 40,
+        "custom_emails_per_day": 10,
+        "linkedin_messages_per_day": 25,
+        "priority_accounts_ratio": 0.2
+      }
+    },
+    "weekly_balance": {
+      "monday_percentage": 25,
+      "tuesday_percentage": 20,
+      "wednesday_percentage": 20,
+      "thursday_percentage": 20,
+      "friday_percentage": 15,
+      "weekend_percentage": 0
+    },
+    "time_of_day": {
+      "morning_percentage": 30,
+      "midday_percentage": 30,
+      "afternoon_percentage": 40,
+      "evening_percentage": 0
+    }
+  },
+  "company_data": {
+    "company_file": "lead qualification/EATT Delegate Lite List Post Event 20250307/all_unique_companies_with_segments.csv",
+    "manual_company_list": [
+      {"name": "Benchmark Capital", "segment": "Financial Adviser", "tier": 1},
+      {"name": "Capital Asset Management", "segment": "Financial Adviser", "tier": 1},
+      {"name": "Cazenove Capital", "segment": "Financial Adviser", "tier": 1}
+    ]
+  },
+  "sales_team": {
+    "sales_reps": [
+      {
+        "role": "Enterprise Account Executive",
+        "rank": 4,
+        "target_personas": ["Wealth-Delegator William", "Adviser Network Founder Alastair"],
+        "strengths": ["C-level relationships", "Large account management", "Complex deal navigation"],
+        "tier_focus": 1
+      },
+      {
+        "role": "Mid-Market Account Executive",
+        "rank": 3,
+        "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia"],
+        "strengths": ["Growth strategy consulting", "ROI demonstration", "Team adoption planning"],
+        "tier_focus": 1
+      },
+      {
+        "role": "SMB Account Executive",
+        "rank": 2,
+        "target_personas": ["Efficiency-Oriented Ethan", "Cost-Conscious Chris"],
+        "strengths": ["Quick value demonstration", "Cost-benefit analysis", "Technical implementation"],
+        "tier_focus": 2
+      },
+      {
+        "role": "Sales Development Representative",
+        "rank": 1,
+        "target_personas": ["Independent Adviser Emma", "All personas (initial qualification)"],
+        "strengths": ["Lead qualification", "Initial engagement", "Event follow-up"],
+        "tier_focus": 3
+      }
+    ],
+    "intertwined_reps": true,
+    "rep_assignments": {
+      "enabled": true,
+      "assignment_strategy": "by_tier_and_persona",
+      "role_distribution": {
+        "tier_1": ["Enterprise Account Executive", "Mid-Market Account Executive"],
+        "tier_2": ["Mid-Market Account Executive", "SMB Account Executive"],
+        "tier_3": ["SMB Account Executive", "Sales Development Representative"]
+      },
+      "custom_assignments": {
+        "Benchmark Capital": ["Enterprise Account Executive", "Sales Development Representative"],
+        "Capital Asset Management": ["Mid-Market Account Executive", "Sales Development Representative"]
+      }
+    }
+  },
+  "advanced_settings": {
+    "use_custom_tiers": false,
+    "auto_distribute_accounts": true,
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "workload_balancing": {
+      "enabled": true,
+      "max_accounts_per_rep": {
+        "Enterprise Account Executive": 15,
+        "Mid-Market Account Executive": 25,
+        "SMB Account Executive": 35,
+        "Sales Development Representative": 50
+      },
+      "rebalance_frequency": "weekly"
+    }
+  }
+} 

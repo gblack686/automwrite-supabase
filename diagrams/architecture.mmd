@@ -1,0 +1,61 @@
+---
+id: c00abf8f-8dc2-499a-81a6-daeec35c5be6
+---
+
+flowchart TB
+    subgraph "Data Sources"
+        A1[Web Scraping] 
+        A2[Financial APIs]
+        A3[Public Records]
+        A4[Client Data]
+        A5[Market Reports]
+    end
+
+    subgraph "ETL Layer"
+        B1[Data Extraction]
+        B2[Transformation Engine]
+        B3[Data Validation]
+        B4[Loading Pipeline]
+    end
+
+    subgraph "Storage Layer"
+        C1[(Primary Database)]
+        C2[(Data Warehouse)]
+        C3[(Vector Database)]
+    end
+
+    subgraph "AI Processing"
+        D1[Entity Recognition]
+        D2[Relationship Mapping]
+        D3[Market Trend Analysis]
+        D4[Opportunity Scoring]
+    end
+
+    subgraph "Knowledge Graph"
+        E1[Graph Database]
+        E2[Entity Relationships]
+        E3[Market Structure]
+    end
+
+    subgraph "Human Validation"
+        F1[Review Interface]
+        F2[Correction Workflow]
+        F3[Enrichment Tools]
+    end
+
+    subgraph "Reporting & Analytics"
+        G1[Interactive Dashboards]
+        G2[Market Reports]
+        G3[Competitive Analysis]
+        G4[TAM Visualization]
+    end
+
+    A1 & A2 & A3 & A4 & A5 --> B1
+    B1 --> B2 --> B3 --> B4
+    B4 --> C1 & C2 & C3
+    C1 & C2 & C3 --> D1 & D2 & D3 & D4
+    D1 & D2 & D3 & D4 --> E1
+    E1 --> E2 --> E3
+    E3 --> F1 --> F2 --> F3
+    F3 -.-> B2
+    E3 --> G1 & G2 & G3 & G4

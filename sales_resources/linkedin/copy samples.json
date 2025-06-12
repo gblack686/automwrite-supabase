@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "type": "business_page_viewer",
+    "title": "General Connection Request for someone who recently looked at the Business Page",
+    "message": "Hi {name},\n\nI hope you're well. I'm Tiana, the Operations Manager at Automwrite. I noticed you had a look at our page and wanted to reach out. I'm always keen to connect with forward thinking advisers in this space and stay in touch with those shaping what's next.\n\nLooking forward to staying connected.\n\nBest,\n\nTiana",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "character_count": 290,
+      "acceptance_rate": "25-30%",
+      "follow_up_required": "Low",
+      "personalization_level": "Medium"
+    },
+    "use_cases": [
+      "Initial outreach to page visitors",
+      "Passive lead engagement",
+      "Building industry presence"
+    ],
+    "notes": "Has worked well in practice; keeps the tone friendly and non-salesy"
+  },
+  {
+    "id": 2,
+    "type": "industry_professional",
+    "title": "General connection request to UK IFA/Director/Adviser",
+    "message": "Hi {name},\n\nMy name is Tiana, I work with advice firms across the UK on creating faster, bespoke suitability report writing systems through Automwrite's. Thought I'd connect, as I'm always keen to stay in touch with forward thinking advisers.\n\nBest,\n\nTiana",
+    "target_personas": ["Independent Adviser Emma", "Efficiency-Oriented Ethan", "Growth-Oriented Olivia"],
+    "metrics": {
+      "character_count": 245,
+      "acceptance_rate": "15-20%",
+      "follow_up_required": "Medium",
+      "personalization_level": "Low"
+    },
+    "use_cases": [
+      "Cold outreach to advisers",
+      "Building professional network",
+      "Creating awareness with decision-makers"
+    ],
+    "notes": "Straightforward and professional; works best with advisers who are active on LinkedIn"
+  },
+  {
+    "id": 3,
+    "type": "regulatory_professional",
+    "title": "General connection request to an industry professional, not necessarily an adviser",
+    "message": "Hi {name}\n\nI'm Tiana, Operations Manager at Automwrite, advice software. I noticed you are involved in [AI Strategy in advice.] I'm always keen to connect with forward thinking contributors in this space and stay in touch with those shaping what's next!\n\nI forward to connecting,\n\nBest,\n\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Wealth-Delegator William", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "character_count": 285,
+      "acceptance_rate": "20-25%",
+      "follow_up_required": "Medium",
+      "personalization_level": "High"
+    },
+    "use_cases": [
+      "Strategic relationship building",
+      "Industry intelligence gathering",
+      "Regulatory/compliance connections"
+    ],
+    "customization_notes": [
+      "Replace [AI Strategy in advice] with their specific focus area",
+      "Examples: [the AI Lab with the FCA], [AI & Digital Delivery in advice]"
+    ],
+    "notes": "Requires research on the prospect's specific role/focus; higher acceptance when well-personalized"
+  }
+] 

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1_followup1",
+    "subject": "Quick Question About Your Report Process",
+    "body": "Hi {First Name},\n\nI reached out last week about how Automwrite helps financial advisers cut report writing time by over 50%.\n\nI'm curious - how long does your team currently spend on producing client reports?\n\nMany advisers we work with were spending 2-3 hours per report before switching to Automwrite. One adviser recently told me they've been able to see 5 more clients per week as a result.\n\nIf this sounds valuable, I'd be happy to show you a quick demo:\n[Link to Demo Scheduling]\n\nBest,\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 8,
+      "complexity": "Low",
+      "notes": "First follow-up focused on gathering information while reinforcing value. Word count: ~90"
+    }
+  },
+  {
+    "id": "1_followup2",
+    "subject": "Last Touchpoint About Automwrite",
+    "body": "Hi {First Name},\n\nI've reached out a couple of times about how Automwrite helps financial advisers automate their report writing process.\n\nAfter this email, I won't follow up again, but I thought I'd share that we're currently offering implementation support at no additional cost for new clients this month.\n\nThis includes custom report template setup and integration with your existing systems - a service valued at £2,000.\n\nIf you're interested:\n* [Book a 15-min Demo]\n* [Start Free Trial]\n\nBest,\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Efficiency-Oriented Ethan"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 7,
+      "complexity": "Low",
+      "notes": "Final follow-up with special offer incentive. Word count: ~80"
+    }
+  },
+  {
+    "id": "4_followup1",
+    "subject": "How a 3-Person Firm Doubled Their Client Capacity",
+    "body": "Hi {First Name},\n\nI recently shared how Automwrite helps advisers scale without adding headcount.\n\nI thought you might be interested in how a 3-person advisory firm in London doubled their client capacity last quarter without hiring anyone new. The key was reducing their report writing time by 75%.\n\nThey now complete in 20 minutes what used to take them 1.5 hours per client - freeing up 4-5 hours daily across their team.\n\nWould you like to see if similar results are possible for your firm?\n[Book a 20-min Assessment Call]\n\nBest,\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Case study follow-up highlighting concrete benefits. Word count: ~90"
+    }
+  },
+  {
+    "id": "4_followup2",
+    "subject": "Final Thoughts on Scaling Your Advice Firm",
+    "body": "Hi {First Name},\n\nThis is my final note about helping advice firms scale without adding headcount.\n\nI've worked with dozens of firms like yours who initially thought their report writing process was \"good enough\" until they saw what Automwrite could do. On average, they were able to take on 30% more clients within 60 days of implementation.\n\nIf you're looking to grow without proportionally increasing costs, I'd be happy to show you how:\n[Book a Quick Demo]\n\nAll the best with your firm's growth,\nTiana",
+    "target_personas": ["Scaling Firm Sam", "Growth-Oriented Olivia", "Adviser Network Founder Alastair"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 8,
+      "complexity": "Low",
+      "notes": "Final follow-up with social proof and results data. Word count: ~80"
+    }
+  },
+  {
+    "id": "5_followup1",
+    "subject": "What 2 Extra Hours Per Day Could Mean For Your Bottom Line",
+    "body": "Hi {First Name},\n\nI recently reached out about Automwrite's report automation capabilities.\n\nLet me ask you: What would you do with an extra 2 hours every day? Our customers typically report this time saving from automating their report writing process.\n\nFor a firm with 3 advisers billing £200/hour, that's an additional £6,000 of potential revenue weekly.\n\nWould this kind of ROI interest you?\n[Book a 15-min Demo]\n[Schedule ROI Assessment]\n\nBest,\nTiana",
+    "target_personas": ["Efficiency-Oriented Ethan", "Cost-Conscious Chris", "Independent Adviser Emma"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "ROI-focused follow-up with concrete financial example. Word count: ~80"
+    }
+  },
+  {
+    "id": "5_followup2",
+    "subject": "One Last Thought About Your ROI",
+    "body": "Hi {First Name},\n\nThis is my final note about Automwrite's ability to boost your practice's ROI.\n\nOur clients typically see a 400% return on their investment within the first year. This comes from:\n• Increased client capacity (average 30% more clients)\n• Reduced operational costs (2-3 hours saved per client)\n• Higher client satisfaction (faster service delivery)\n\nIf you'd like to calculate your potential ROI:\n[Schedule 15-min ROI Assessment]\n\nWishing you continued success,\nTiana",
+    "target_personas": ["Efficiency-Oriented Ethan", "Cost-Conscious Chris", "Independent Adviser Emma"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 8,
+      "complexity": "Low",
+      "notes": "Final ROI-focused follow-up with clear benefits breakdown. Word count: ~85"
+    }
+  },
+  {
+    "id": "8_followup1",
+    "subject": "Your Early Adopter Status - Expiring Soon",
+    "body": "Hi {First Name},\n\nI wanted to follow up about the Early Adopter opportunity I mentioned for Automwrite.\n\nWe're limiting this special offer to just 20 firms, and we currently have only 5 spots remaining. Early Adopters receive:\n\n• 30% lifetime discount off standard pricing\n• Free access to all future premium features\n• Priority customer support\n\nWould securing an Early Adopter spot interest you? The offer expires this Friday.\n\n[Book a Quick Demo]\n[Start Free Trial]\n\nBest,\nTiana",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Follow-up",
+      "effectiveness_rating": 9,
+      "complexity": "Low",
+      "notes": "Urgency-focused follow-up with limited availability. Word count: ~90"
+    }
+  },
+  {
+    "id": "8_followup2",
+    "subject": "Last Call - Early Adopter Status (24 Hours Left)",
+    "body": "Hi {First Name},\n\nThis is the final notification that our Early Adopter program for Automwrite closes tomorrow.\n\nWe now have just 2 spots remaining for firms who want to lock in:\n\n• 30% lifetime discount\n• All future premium features at no extra cost\n• Priority implementation and support\n\nIf you're interested in claiming one of the last spots, please reply today or book a demo below.\n\n[Last-Chance Demo Booking]\n[Secure Early Adopter Status - Start Trial]\n\nBest,\nTiana",
+    "target_personas": ["All Personas"],
+    "metrics": {
+      "funnel_stage": "Final follow-up",
+      "effectiveness_rating": 8.5,
+      "complexity": "Low",
+      "notes": "Final urgency-driven follow-up with high scarcity. Word count: ~85"
+    }
+  }
+] 

@@ -1,0 +1,51 @@
+flowchart TB
+    subgraph "SDR Functions"
+        SD1[Lead Qualification]
+        SD2[Demo Scheduling]
+        SD3[Initial Discovery]
+        SD4[Objection Handling]
+        SD5[Follow-up Management]
+    end
+
+    subgraph "Go-to-Market Engineering"
+        GT1[Market Intelligence]
+        GT2[Data Integration]
+        GT3[Knowledge Graph]
+        GT4[Analytics Engine]
+        GT5[Human Validation Loop]
+    end
+
+    subgraph "Shared Data Infrastructure"
+        DB1[(Supabase Database)]
+        API[FastAPI Endpoints]
+        DASH[Insights Dashboard]
+    end
+
+    subgraph "Client Journey"
+        C1[Website Visit]
+        C2[Initial Contact]
+        C3[Discovery Call]
+        C4[Demo]
+        C5[Trial/Onboarding]
+        C6[Customer]
+    end
+    
+    C1 --> GT1
+    GT1 --> DB1
+    DB1 --> GT3
+    GT3 --> DASH
+    DASH --> SD1
+    SD1 --> C2
+    C2 --> SD3
+    SD3 --> C3
+    GT3 --> SD3
+    SD3 --> DB1
+    SD2 --> C4
+    C4 --> SD5
+    SD5 --> C5
+    GT2 --> DB1
+    GT4 --> DASH
+    GT5 <--> DB1
+    C5 --> GT5
+    C5 --> C6
+    DB1 <--> API
