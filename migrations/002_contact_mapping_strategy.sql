@@ -1,0 +1,152 @@
+-- Contact Mapping Strategy from Main Branch to Simplified Schema
+-- This file documents how to migrate data from existing contact tables to the new simplified schema
+-- FOCUS: cold_outreach_boards, clay_uk_advisors_contacts, eatt_delegates, website_events
+
+-- STEP 1: Add source columns to main branch tables (run in main branch)
+-- ALTER TABLE clay_uk_advisors_contacts ADD COLUMN IF NOT EXISTS source_table TEXT DEFAULT 'clay_uk_advisors_contacts';
+-- ALTER TABLE cold_outreach_boards ADD COLUMN IF NOT EXISTS source_table TEXT DEFAULT 'cold_outreach_boards';
+-- ALTER TABLE eatt_delegates ADD COLUMN IF NOT EXISTS source_table TEXT DEFAULT 'eatt_delegates';
+-- ALTER TABLE website_events ADD COLUMN IF NOT EXISTS source_table TEXT DEFAULT 'website_events';
+
+-- STEP 2: Create companies from UK advisors data
+-- INSERT INTO companies (name, domain, website, industry, size_employees, size_advisors, founded, location, description, company_type)
+-- SELECT DISTINCT
+--     company_name as name,
+--     domain,
+--     website,
+--     industry,
+--     CASE 
+--         WHEN employee_count ~ '^[0-9]+$' THEN employee_count::integer
+--         ELSE NULL
+--     END as size_employees,
+--     total_advisers as size_advisors,
+--     founded,
+--     NULL as location,
+--     description,
+--     'Financial Advisory' as company_type
+-- FROM uk_advisors 
+-- WHERE company_name IS NOT NULL AND domain IS NOT NULL
+-- ON CONFLICT (domain) DO NOTHING;
+
+-- STEP 3: Create companies from EATT Delegates (50 unique companies)
+-- INSERT INTO companies (name, company_type, tier, description)
+-- SELECT DISTINCT
+--     company_name as name,
+--     'Financial Services' as company_type,
+--     'Event Attendee' as tier,
+--     'Company that attended EATT conference - potential high-value prospect' as description
+-- FROM eatt_delegates
+-- WHERE company_name IS NOT NULL
+-- ON CONFLICT (name) DO UPDATE SET
+--     tier = EXCLUDED.tier,
+--     description = EXCLUDED.description;
+
+-- STEP 4: Map Clay UK Advisors Contacts (1,601 records)
+-- INSERT INTO contacts (
+--     company_id, first_name, last_name, full_name, email, 
+--     job_title, location, linkedin_url, lead_status, lead_source, source_table
+-- )
+-- SELECT 
+--     c.id as company_id,
+--     first_name,
+--     last_name,
+--     full_name,
+--     work_email as email,
+--     job_title,
+--     location,
+--     linkedin_profile as linkedin_url,
+--     CASE 
+--         WHEN added_to_heyreach = true THEN 'contacted'
+--         ELSE 'new'
+--     END as lead_status,
+--     'clay' as lead_source,
+--     'clay_uk_advisors_contacts' as source_table
+-- FROM clay_uk_advisors_contacts clay
+-- LEFT JOIN companies c ON c.domain = clay.company_domain
+-- WHERE clay.work_email IS NOT NULL
+-- ON CONFLICT (email, full_name) DO NOTHING;
+
+-- STEP 5: Map Cold Outreach Boards (2,247 records)
+-- INSERT INTO contacts (
+--     first_name, last_name, full_name, email, phone, 
+--     location, linkedin_url, lead_status, lead_source, source_table
+-- )
+-- SELECT 
+--     first_name,
+--     last_name,
+--     name as full_name,
+--     email,
+--     phone_number as phone,
+--     location,
+--     linkedin as linkedin_url,
+--     COALESCE(status, 'new') as lead_status,
+--     'monday' as lead_source,
+--     'cold_outreach_boards' as source_table
+-- FROM cold_outreach_boards
+-- WHERE email IS NOT NULL
+-- ON CONFLICT (email, full_name) DO NOTHING;
+
+-- STEP 6: Map Website Events (1,360 records)
+-- Extract contact information from website events body JSON
+-- INSERT INTO contacts (
+--     email, lead_source, source_table, lead_status
+-- )
+-- SELECT DISTINCT
+--     body->>'email' as email,
+--     'website' as lead_source,
+--     'website_events' as source_table,
+--     CASE 
+--         WHEN eventType = 'form_submit' THEN 'lead'
+--         WHEN eventType = 'page_view' THEN 'visitor'
+--         ELSE 'prospect'
+--     END as lead_status
+-- FROM website_events
+-- WHERE body->>'email' IS NOT NULL 
+--   AND body->>'email' != ''
+--   AND body->>'email' LIKE '%@%'
+-- ON CONFLICT (email, full_name) DO NOTHING;
+
+-- STEP 7: Create email records from HeyReach data
+-- INSERT INTO emails (
+--     contact_id, direction, email_type, subject, body,
+--     campaign_id, campaign_name, status, external_source, sent_at
+-- )
+-- SELECT 
+--     c.id as contact_id,
+--     'outbound' as direction,
+--     'cold_outreach' as email_type,
+--     'LinkedIn Message' as subject,
+--     (recent_messages->0->>'message') as body,
+--     campaign_id::text,
+--     campaign_name,
+--     'sent' as status,
+--     'heyreach' as external_source,
+--     event_timestamp as sent_at
+-- FROM heyreach_message_sent hrs
+-- LEFT JOIN contacts c ON c.email = hrs.lead_email_address
+-- WHERE hrs.recent_messages IS NOT NULL AND jsonb_array_length(hrs.recent_messages) > 0;
+
+-- SUMMARY OF FOCUSED MAPPING:
+-- 1. uk_advisors -> companies (~1,000 companies) - UK financial advisory firms
+-- 2. eatt_delegates -> companies (50 unique companies) - Event attendee companies (high-value prospects)
+-- 3. clay_uk_advisors_contacts -> contacts (1,601 records) - UK financial advisors with full contact details
+-- 4. cold_outreach_boards -> contacts (2,247 records) - Monday.com cold outreach data with contact info
+-- 5. website_events -> contacts (~100-200 records) - Website visitors with email captures
+-- 6. heyreach_message_sent -> emails (312 records) - LinkedIn messages sent
+
+-- Total estimated companies: ~1,050+ unique companies (including EATT event attendees)
+-- Total estimated contacts: ~4,000+ unique contacts (focused on quality sources)
+-- Total estimated emails: ~300+ email records
+
+-- DATA QUALITY NOTES:
+-- - UK Advisors: Company-level data for financial advisory firms
+-- - EATT Delegates: Company names only - high-value event attendees, no individual contacts
+-- - Clay UK Advisors: High quality, complete contact data with LinkedIn profiles
+-- - Cold Outreach Boards: Good contact data, some missing fields
+-- - Website Events: Email captures from website forms and interactions
+-- - All tables will have source_table column for tracking data lineage
+
+-- COMPANY MAPPING PRIORITY:
+-- 1. UK Advisors companies (primary source for financial advisory firms)
+-- 2. EATT Delegates companies (high-value event attendees - mark as "Event Attendee" tier)
+-- 3. Companies derived from contact data (Clay, Cold Outreach) 

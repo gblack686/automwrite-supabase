@@ -403,19 +403,203 @@ def generate_campaign_outline(config: Dict) -> str:
     
     return output_file
 
+def generate_2_email_sequences(config: Dict) -> str:
+    """Generate a markdown file with 2-email sequence examples for each tier/persona/role combination without using an API."""
+    output_file = "campaigns/May2025/generated_2_email_sequences.md"
+    sales_team = config["sales_team"]["sales_reps"]
+    tier_count = config["tiering_settings"]["tier_count"]
+
+    markdown_content = "# 2-Email Sequence Examples\n\nThis file contains example initial outreach and follow-up emails for different sales roles, target personas, and tiers.\n\n"
+
+    tier_descriptions = {
+        1: "High Priority (Enterprise focus, C-level, large accounts)",
+        2: "Medium Priority (Growth, mid-market)",
+        3: "Nurture (SMB, relationship building)"
+    }
+
+    # Email templates tailored by role
+    email_templates = {
+        "Enterprise Account Executive": {
+            "email_1": {
+                "subject": "Idea for scaling reporting at {company_name}",
+                "body": """Hi {contact_name},
+
+My name is {sender_name} from Automwrite. Given your position as {persona} at {company_name}, I thought you might be interested in a more efficient way to handle client reporting.
+
+For large advisory firms, ensuring consistency and quality in reporting at scale is a significant challenge. We specialize in automating this process, freeing up your team for more strategic, client-facing activities.
+
+I have a few ideas on how we could help {company_name}. Would you be open to a brief introductory call next week?
+
+Best regards,
+{sender_name}
+Enterprise Account Executive
+"""
+            },
+            "email_2": {
+                "subject": "Re: Idea for scaling reporting at {company_name}",
+                "body": """Hi {contact_name},
+
+Just a quick follow-up to my previous email.
+
+A common pain point for firms of your size is the 'hidden' cost of manual, repetitive work in the reporting cycle. We recently helped a similar enterprise client reduce their report generation time by over 60% while improving compliance oversight.
+
+Here is a brief case study outlining their success: [Link to Enterprise Case Study]
+
+Is this a priority for you at the moment?
+
+Best,
+{sender_name}
+"""
+            }
+        },
+        "Mid-Market Account Executive": {
+            "email_1": {
+                "subject": "Growing {company_name} with better reporting",
+                "body": """Hi {contact_name},
+
+My name is {sender_name}, and I'm with Automwrite. I'm reaching out to growth-oriented firms like yours that attended the recent EATT event.
+
+As you scale, manual processes like report writing can become a major bottleneck. We help mid-market firms automate this, allowing your advisors to focus on winning new business and serving clients.
+
+Given your role as {persona}, I believe our solution could be a key enabler for your next phase of growth. Do you have 15 minutes to see how it works next week?
+
+Thanks,
+{sender_name}
+Mid-Market Account Executive
+"""
+            },
+            "email_2": {
+                "subject": "Re: Growing {company_name} with better reporting",
+                "body": """Hi {contact_name},
+
+Following up on my previous message.
+
+Many firms in a growth phase don't realize how much time is lost to inefficient reporting until it's too late. Our clients typically save 5-10 hours per advisor, per week.
+
+What could your team accomplish with that extra time?
+
+Here's a quick video from one of our clients on how they've used that time to grow: [Link to Client Testimonial]
+
+Worth a chat?
+
+Best,
+{sender_name}
+"""
+            }
+        },
+        "SMB Account Executive": {
+            "email_1": {
+                "subject": "Saving time on client reports",
+                "body": """Hi {contact_name},
+
+My name is {sender_name} from Automwrite. I saw you were at the EATT event and wanted to share a quick idea.
+
+For busy firms like yours, time is money. We've built a straightforward tool that automates the tedious parts of client report writing, giving you more time to focus on what matters. It's easy to set up and very cost-effective.
+
+As {persona}, I'm sure you're always looking for ways to improve efficiency. Can I show you a quick 10-minute demo?
+
+Best,
+{sender_name}
+SMB Account Executive
+"""
+            },
+            "email_2": {
+                "subject": "Re: Saving time on client reports",
+                "body": """Hi {contact_name},
+
+Just a quick follow-up.
+
+Wondering if you saw my previous email? The main benefit our clients see is a quick and clear ROI. For a small investment, they get hours back each week.
+
+You can see a pricing overview and an ROI calculator on our site here: [Link to Pricing/ROI Page]
+
+Let me know if it's of interest.
+
+Best,
+{sender_name}
+"""
+            }
+        },
+        "Sales Development Representative": {
+             "email_1": {
+                "subject": "Quick question from the EATT event",
+                "body": """Hi {contact_name},
+
+My name is {sender_name} with Automwrite. I'm following up with a few people from the EATT event.
+
+We're helping financial advisors and firms automate their client reporting to save a ton of time.
+
+Is this something you handle? If so, would you be open to learning more?
+
+Thanks,
+{sender_name}
+Sales Development Representative
+"""
+            },
+            "email_2": {
+                "subject": "Re: Quick question from the EATT event",
+                "body": """Hi {contact_name},
+
+Just checking if you had a moment to consider my last email.
+
+Our tool helps advisors like you get back hours every week. Here's a 2-minute video that shows how it works: [Link to Demo Video]
+
+If you're interested, I can connect you with one of our specialists.
+
+Best,
+{sender_name}
+"""
+            }
+        }
+    }
+    
+    default_templates = email_templates['Sales Development Representative'] # Fallback
+
+    for tier in range(1, tier_count + 1):
+        for rep in sales_team:
+            for persona in rep.get('target_personas', []):
+                if "All personas" in persona:
+                    continue
+
+                markdown_content += f"## Tier {tier}: {tier_descriptions.get(tier, 'General')}\n\n"
+                markdown_content += f"**Role:** {rep['role']}\n\n"
+                markdown_content += f"**Target Persona:** {persona}\n\n"
+
+                templates = email_templates.get(rep['role'], default_templates)
+                
+                # --- Email 1 ---
+                email_1 = templates['email_1']
+                markdown_content += "### Email 1: Initial Outreach\n\n"
+                markdown_content += f"**Subject:** `{email_1['subject'].format(company_name='{Company Name}')}`\n\n"
+                markdown_content += "```\n"
+                markdown_content += email_1['body'].format(
+                    company_name="{Company Name}",
+                    contact_name="{Contact First Name}",
+                    sender_name="{Sender Name}",
+                    persona=persona
+                ).strip()
+                markdown_content += "\n```\n\n"
+                
+                # --- Email 2 ---
+                email_2 = templates['email_2']
+                markdown_content += "### Email 2: Follow-up\n\n"
+                markdown_content += f"**Subject:** `{email_2['subject'].format(company_name='{Company Name}')}`\n\n"
+                markdown_content += "```\n"
+                markdown_content += email_2['body'].format(
+                    contact_name="{Contact First Name}",
+                    sender_name="{Sender Name}"
+                ).strip()
+                markdown_content += "\n```\n\n"
+                markdown_content += "---\n\n"
+
+    with open(output_file, "w", encoding="utf-8") as file:
+        file.write(markdown_content)
+    
+    return output_file
+
 if __name__ == "__main__":
     config_path = "campaigns/May2025/campaign_config.json"
     config = load_config(config_path)
-    
-    # Check if API key is set
-    if config["api_settings"]["api_key"] == "YOUR_OPENAI_API_KEY":
-        # Try to load from environment variable
-        api_key = os.environ.get("OPENAI_API_KEY")
-        if api_key:
-            config["api_settings"]["api_key"] = api_key
-        else:
-            print("Please set your OpenAI API key in the config file or OPENAI_API_KEY environment variable")
-            exit(1)
-    
-    output_file = generate_campaign_outline(config)
-    print(f"Campaign outline generated and saved to {output_file}")
+
+    output_file = generate_2_email_sequences(config)
+    print(f"2-email sequence examples generated and saved to {output_file}")
